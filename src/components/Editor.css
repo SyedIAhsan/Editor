@@ -1,0 +1,100 @@
+/* Custom ProseMirror dark theme styles */
+.ProseMirror {
+  background: transparent !important;
+  color: white !important;
+  outline: none;
+  border: none;
+}
+
+.ProseMirror p {
+  color: white;
+  margin: 1em 0;
+}
+
+.ProseMirror h1, .ProseMirror h2, .ProseMirror h3, .ProseMirror h4, .ProseMirror h5, .ProseMirror h6 {
+  color: white;
+  font-weight: bold;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.ProseMirror h1 { font-size: 1.8em; }
+.ProseMirror h2 { font-size: 1.5em; }
+.ProseMirror h3 { font-size: 1.3em; }
+
+.ProseMirror blockquote {
+  border-left: 3px solid #6b7280;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #d1d5db;
+  font-style: italic;
+}
+
+.ProseMirror code {
+  background: #374151;
+  color: #fbbf24;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+}
+
+.ProseMirror pre {
+  background: #1f2937;
+  color: white;
+  padding: 1em;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.ProseMirror ul, .ProseMirror ol {
+  color: white;
+  padding-left: 1.5em;
+  margin: 1em 0;
+}
+
+.ProseMirror li {
+  margin: 0.5em 0;
+}
+
+/* Menu bar styling for dark theme */
+.ProseMirror-menubar {
+  background: #374151 !important;
+  border-bottom: 1px solid #4b5563 !important;
+  padding: 0.5rem !important;
+}
+
+.ProseMirror-menu {
+  background: #374151 !important;
+}
+
+.ProseMirror-menuitem {
+  color: white !important;
+  border: 1px solid transparent !important;
+  border-radius: 0.25rem !important;
+  margin: 0 0.125rem !important;
+}
+
+.ProseMirror-menuitem:hover {
+  background: #4b5563 !important;
+  border-color: #6b7280 !important;
+}
+
+.ProseMirror-menuitem.ProseMirror-menu-active {
+  background: #6366f1 !important;
+  border-color: #818cf8 !important;
+}
+
+/* Selection styling */
+.ProseMirror ::selection {
+  background: #3b82f6;
+}
+
+.ProseMirror-selectednode {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Focus ring */
+.ProseMirror-focused {
+  outline: none;
+}
